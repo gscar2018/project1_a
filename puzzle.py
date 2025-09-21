@@ -52,7 +52,7 @@ def moveTile(board, move, blankPos):
     newBoard[blankPos], newBoard[newBlankPos] = newBoard[newBlankPos], newBoard[blankPos]
     return newBoard
 
-# A* search algorithm - Alternative implementation
+# A* search 
 def aStar(startState, goalState, heuristicFunc=manhattanDistance):
     # Initialize frontier and explored set
     frontier = [PuzzleState(startState, None, None, 0, heuristicFunc(startState, goalState))]
